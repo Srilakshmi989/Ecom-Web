@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .add{
+            margin-top: 15%;
+            text-align: center;
+            border: 1px solid black;
+            width: 20%;
+            margin-left: 40%;
+        }
+        body{
+            background-image: url("https://i.makeagif.com/media/9-10-2016/PPCKYi.gif");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="add">
+        <h1>Welcome</h1>
+        <a href="{{url_for('user_signup')}}"><button class="button" style="border-radius: 10px;">SignUp</button></a><br>
+        <br>
+        <a href="{{url_for('ulogin')}}"><button class="button" style="border-radius: 10px;">Login</button></a><br>
+        <br>
+    </div>
+</body>
+</html>

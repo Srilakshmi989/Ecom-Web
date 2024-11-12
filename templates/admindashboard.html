@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://i.pinimg.com/originals/43/67/6a/43676afa032c9f3725fd5c70bc0ea38e.gif");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding-bottom: 20%;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            margin-top: 5%;
+            background-color: white;
+        }
+
+        .nav-box {
+            background-color: lightskyblue;
+            padding: 10px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-box a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post">
+        <nav class="navbar">
+            <div class="nav-box"><a href="{{url_for('additem')}}">Add Products</a></div>
+            <div class="nav-box"><a href="{{url_for('viewitems')}}">View All Items</a></div>
+            <div class="nav-box"><a href="#products">Products</a></div>
+            <div class="nav-box"><a href="#admin-logout">Admin Logout</a></div>
+        </nav>
+    </form>
+</body>
+
+</html>
